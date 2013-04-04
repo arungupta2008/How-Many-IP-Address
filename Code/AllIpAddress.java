@@ -1,9 +1,18 @@
 //CC to Arun Kumar Gupta 
-import java.util.*; public class AllIpAddress { public static void main (String [] args) { Scanner sc = new Scanner(System.in); String input = sc.next(); int[] intArray = new int[input.length()]; int length = input.length();
+import java.util.*;
+public class AllIpAddress 
+{ 
+    public static void main (String [] args) 
+    { 
+        Scanner sc = new Scanner(System.in); 
+        String input = sc.next(); 
+        int[] intArray = new int[input.length()]; 
+        int length = input.length();
 
-    for (int i = 0; i < input.length(); i++) {
-    intArray[i] = Character.digit(input.charAt(i), 10);
-    //System.out.println(intArray[i]);
+    for (int i = 0; i < input.length(); i++) 
+    {
+        intArray[i] = Character.digit(input.charAt(i), 10);
+        //System.out.println(intArray[i]);
     }
     int i = 0 , j = 1 , k = 2;
     AllIpAddress ip = new AllIpAddress();
@@ -12,6 +21,8 @@ import java.util.*; public class AllIpAddress { public static void main (String 
 
 
 }
+
+
 void Ipaddress(int [] intArray , int i , int j , int k , int length)
 {
     try{
